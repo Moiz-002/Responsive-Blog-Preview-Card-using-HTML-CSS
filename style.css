@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Yellow);
+}
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+}
+
+.blog-preview-card {
+  max-width: 384px;
+  background-color: var(--White);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--Gray-950);
+  box-shadow: 8px 8px var(--Gray-950);
+}
+
+.card-image img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.main-content .category {
+  background-color: var(--Yellow);
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 4px 12px;
+  line-height: 150%;
+  color: var(--Gray-950);
+}
+
+.main-content .publish-date {
+  font-size: 14px;
+  font-weight: 500px;
+  line-height: 150%;
+  color: var(--Gray-950);
+}
+
+.main-content .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--Gray-950);
+}
+
+.main-content .description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--Gray-500);
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.author-info .author-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Gray-950);
+}
+
+@media (max-width: 375px) {
+  .blog-preview-card{
+    max-width: 327px;
+  }
+  .main-content .category {
+    font-size: calc(16px - 2px);
+  }
+
+  .main-content .publish-date {
+    font-size: calc(14px - 2px);
+  }
+
+  .main-content .title {
+    font-size: calc(24px - 4px);
+  }
+
+  .main-content .description {
+    font-size: calc(16px - 2px);
+  }
+}
