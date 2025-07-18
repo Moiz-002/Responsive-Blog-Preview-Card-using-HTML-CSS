@@ -100,6 +100,7 @@ body {
   color: var(--Gray-950);
 }
 
+/* Using Media Query for Mobile Screens */
 @media (max-width: 375px) {
   .blog-preview-card {
     max-width: 327px;
