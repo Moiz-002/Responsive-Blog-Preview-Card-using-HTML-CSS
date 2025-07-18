@@ -51,7 +51,7 @@ body {
   gap: 12px;
 }
 
-.main-content .category {
+.category {
   background-color: var(--Yellow);
   font-size: 14px;
   font-weight: 700;
@@ -61,21 +61,26 @@ body {
   color: var(--Gray-950);
 }
 
-.main-content .publish-date {
+.publish-date {
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 150%;
   color: var(--Gray-950);
 }
 
-.main-content .title {
+.title {
   font-size: 24px;
   font-weight: 700;
   line-height: 150%;
   color: var(--Gray-950);
 }
 
-.main-content .description {
+.title:hover{
+  color: var(--Yellow);
+  cursor: pointer;
+}
+
+.description {
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
@@ -96,22 +101,22 @@ body {
 }
 
 @media (max-width: 375px) {
-  .blog-preview-card{
+  .blog-preview-card {
     max-width: 327px;
   }
-  .main-content .category {
+  .category {
     font-size: calc(16px - 2px);
   }
 
-  .main-content .publish-date {
+  .publish-date {
     font-size: calc(14px - 2px);
   }
 
-  .main-content .title {
+  .title {
     font-size: calc(24px - 4px);
   }
 
-  .main-content .description {
+  .description {
     font-size: calc(16px - 2px);
   }
 }
